@@ -12,7 +12,7 @@ import CoreLocation
 struct DebugView: View {
     
     @Environment(\.modelContext) private var modelContext
-    @EnvironmentObject private var locationTracker: LocationTracker
+    @Environment(LocationTracker.self) private var locationTracker
 
     var body: some View {
         VStack {
@@ -27,5 +27,5 @@ struct DebugView: View {
 }
 
 #Preview {
-    DebugView().environmentObject(LocationTracker())
+    DebugView()
 }

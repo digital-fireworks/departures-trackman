@@ -14,15 +14,27 @@ extension CLLocation {
     }
 }
 
-class LocationTracker: NSObject, ObservableObject, CLLocationManagerDelegate {
+struct LocationKey: EnvironmentKey {
+    static let defaultValue: CLLocation? = nil
+}
+
+extension EnvironmentValues {
+    var location: CLLocation? {
+        get { self[LocationKey.self] }
+        set { self[LocationKey.self] = newValue }
+    }
+}
+
+@Observable
+class LocationTracker: NSObject, CLLocationManagerDelegate {
     
     // Use this as default location is access to location is not auhtorized by user
     static var defaultLocation: CLLocation {
         CLLocation(latitude: 59.3294, longitude: 18.0685)
     }
     
-    @Published var authorizationStatus: CLAuthorizationStatus = .notDetermined
-    @Published var location: CLLocation? = nil
+    var authorizationStatus: CLAuthorizationStatus = .notDetermined
+    var location: CLLocation? = nil
 
     private let manager: CLLocationManager
     

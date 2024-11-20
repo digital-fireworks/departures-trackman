@@ -14,19 +14,18 @@ struct ContentView: View {
     var body: some View {
         TabView {
             StopsNearbyView()
+                .environment(locationTracker)
                 .tabItem {
                     Label("Nearby", systemImage: "location.circle")
                 }
             
+            #if DEBUG
             DebugView()
-                .environmentObject(locationTracker)
+                .environment(locationTracker)
                 .tabItem{
                     Label("Debug", systemImage: "gear")
                 }
+            #endif
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		356060B22CEE0D4D0023477C /* Rejseplanen in Frameworks */ = {isa = PBXBuildFile; productRef = 356060B12CEE0D4D0023477C /* Rejseplanen */; };
+		356060D22CEE3C9A0023477C /* Helsinge.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C12CEE3C9A0023477C /* Helsinge.gpx */; };
+		356060D32CEE3C9A0023477C /* Lyngby Station.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060CA2CEE3C9A0023477C /* Lyngby Station.gpx */; };
+		356060D42CEE3C9A0023477C /* IT-Universitetet.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060CB2CEE3C9A0023477C /* IT-Universitetet.gpx */; };
+		356060D52CEE3C9A0023477C /* Roskilde.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060CF2CEE3C9A0023477C /* Roskilde.gpx */; };
+		356060D62CEE3C9A0023477C /* Hoeghsmindeparken.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C42CEE3C9A0023477C /* Hoeghsmindeparken.gpx */; };
+		356060D72CEE3C9A0023477C /* HøjeTaastrup.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C22CEE3C9A0023477C /* HøjeTaastrup.gpx */; };
+		356060D82CEE3C9A0023477C /* Sjaeleboderne.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060D02CEE3C9A0023477C /* Sjaeleboderne.gpx */; };
+		356060D92CEE3C9A0023477C /* IKEA Gentofte.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C52CEE3C9A0023477C /* IKEA Gentofte.gpx */; };
+		356060DA2CEE3C9A0023477C /* Maglegaardsskolen.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060CC2CEE3C9A0023477C /* Maglegaardsskolen.gpx */; };
+		356060DB2CEE3C9A0023477C /* Amagerbro.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C62CEE3C9A0023477C /* Amagerbro.gpx */; };
+		356060DC2CEE3C9A0023477C /* Aarhus.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060CE2CEE3C9A0023477C /* Aarhus.gpx */; };
+		356060DD2CEE3C9A0023477C /* Koge.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C82CEE3C9A0023477C /* Koge.gpx */; };
+		356060DE2CEE3C9A0023477C /* Solrod.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060CD2CEE3C9A0023477C /* Solrod.gpx */; };
+		356060DF2CEE3C9A0023477C /* Bronshoj.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060BF2CEE3C9A0023477C /* Bronshoj.gpx */; };
+		356060E02CEE3C9A0023477C /* Centrum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C92CEE3C9A0023477C /* Centrum.gpx */; };
+		356060E12CEE3C9A0023477C /* Hillerød Station.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C02CEE3C9A0023477C /* Hillerød Station.gpx */; };
+		356060E22CEE3C9A0023477C /* Sir Kirke.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C32CEE3C9A0023477C /* Sir Kirke.gpx */; };
+		356060E32CEE3C9A0023477C /* Malmö.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 356060C72CEE3C9A0023477C /* Malmö.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +49,24 @@
 		3560607E2CEE0B180023477C /* Departures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Departures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356060922CEE0B190023477C /* DeparturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeparturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3560609C2CEE0B190023477C /* DeparturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeparturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		356060BF2CEE3C9A0023477C /* Bronshoj.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bronshoj.gpx; sourceTree = "<group>"; };
+		356060C02CEE3C9A0023477C /* Hillerød Station.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Hillerød Station.gpx"; sourceTree = "<group>"; };
+		356060C12CEE3C9A0023477C /* Helsinge.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Helsinge.gpx; sourceTree = "<group>"; };
+		356060C22CEE3C9A0023477C /* HøjeTaastrup.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HøjeTaastrup.gpx"; sourceTree = "<group>"; };
+		356060C32CEE3C9A0023477C /* Sir Kirke.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Sir Kirke.gpx"; sourceTree = "<group>"; };
+		356060C42CEE3C9A0023477C /* Hoeghsmindeparken.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Hoeghsmindeparken.gpx; sourceTree = "<group>"; };
+		356060C52CEE3C9A0023477C /* IKEA Gentofte.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "IKEA Gentofte.gpx"; sourceTree = "<group>"; };
+		356060C62CEE3C9A0023477C /* Amagerbro.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Amagerbro.gpx; sourceTree = "<group>"; };
+		356060C72CEE3C9A0023477C /* Malmö.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Malmö.gpx"; sourceTree = "<group>"; };
+		356060C82CEE3C9A0023477C /* Koge.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Koge.gpx; sourceTree = "<group>"; };
+		356060C92CEE3C9A0023477C /* Centrum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Centrum.gpx; sourceTree = "<group>"; };
+		356060CA2CEE3C9A0023477C /* Lyngby Station.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Lyngby Station.gpx"; sourceTree = "<group>"; };
+		356060CB2CEE3C9A0023477C /* IT-Universitetet.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "IT-Universitetet.gpx"; sourceTree = "<group>"; };
+		356060CC2CEE3C9A0023477C /* Maglegaardsskolen.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Maglegaardsskolen.gpx; sourceTree = "<group>"; };
+		356060CD2CEE3C9A0023477C /* Solrod.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Solrod.gpx; sourceTree = "<group>"; };
+		356060CE2CEE3C9A0023477C /* Aarhus.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Aarhus.gpx; sourceTree = "<group>"; };
+		356060CF2CEE3C9A0023477C /* Roskilde.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Roskilde.gpx; sourceTree = "<group>"; };
+		356060D02CEE3C9A0023477C /* Sjaeleboderne.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sjaeleboderne.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -93,6 +129,7 @@
 		356060752CEE0B180023477C = {
 			isa = PBXGroup;
 			children = (
+				356060D12CEE3C9A0023477C /* GPX */,
 				356060802CEE0B180023477C /* Departures */,
 				356060952CEE0B190023477C /* DeparturesTests */,
 				3560609F2CEE0B190023477C /* DeparturesUITests */,
@@ -108,6 +145,31 @@
 				3560609C2CEE0B190023477C /* DeparturesUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		356060D12CEE3C9A0023477C /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				356060BF2CEE3C9A0023477C /* Bronshoj.gpx */,
+				356060C02CEE3C9A0023477C /* Hillerød Station.gpx */,
+				356060C12CEE3C9A0023477C /* Helsinge.gpx */,
+				356060C22CEE3C9A0023477C /* HøjeTaastrup.gpx */,
+				356060C32CEE3C9A0023477C /* Sir Kirke.gpx */,
+				356060C42CEE3C9A0023477C /* Hoeghsmindeparken.gpx */,
+				356060C52CEE3C9A0023477C /* IKEA Gentofte.gpx */,
+				356060C62CEE3C9A0023477C /* Amagerbro.gpx */,
+				356060C72CEE3C9A0023477C /* Malmö.gpx */,
+				356060C82CEE3C9A0023477C /* Koge.gpx */,
+				356060C92CEE3C9A0023477C /* Centrum.gpx */,
+				356060CA2CEE3C9A0023477C /* Lyngby Station.gpx */,
+				356060CB2CEE3C9A0023477C /* IT-Universitetet.gpx */,
+				356060CC2CEE3C9A0023477C /* Maglegaardsskolen.gpx */,
+				356060CD2CEE3C9A0023477C /* Solrod.gpx */,
+				356060CE2CEE3C9A0023477C /* Aarhus.gpx */,
+				356060CF2CEE3C9A0023477C /* Roskilde.gpx */,
+				356060D02CEE3C9A0023477C /* Sjaeleboderne.gpx */,
+			);
+			path = GPX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +296,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356060D22CEE3C9A0023477C /* Helsinge.gpx in Resources */,
+				356060D32CEE3C9A0023477C /* Lyngby Station.gpx in Resources */,
+				356060D42CEE3C9A0023477C /* IT-Universitetet.gpx in Resources */,
+				356060D52CEE3C9A0023477C /* Roskilde.gpx in Resources */,
+				356060D62CEE3C9A0023477C /* Hoeghsmindeparken.gpx in Resources */,
+				356060D72CEE3C9A0023477C /* HøjeTaastrup.gpx in Resources */,
+				356060D82CEE3C9A0023477C /* Sjaeleboderne.gpx in Resources */,
+				356060D92CEE3C9A0023477C /* IKEA Gentofte.gpx in Resources */,
+				356060DA2CEE3C9A0023477C /* Maglegaardsskolen.gpx in Resources */,
+				356060DB2CEE3C9A0023477C /* Amagerbro.gpx in Resources */,
+				356060DC2CEE3C9A0023477C /* Aarhus.gpx in Resources */,
+				356060DD2CEE3C9A0023477C /* Koge.gpx in Resources */,
+				356060DE2CEE3C9A0023477C /* Solrod.gpx in Resources */,
+				356060DF2CEE3C9A0023477C /* Bronshoj.gpx in Resources */,
+				356060E02CEE3C9A0023477C /* Centrum.gpx in Resources */,
+				356060E12CEE3C9A0023477C /* Hillerød Station.gpx in Resources */,
+				356060E22CEE3C9A0023477C /* Sir Kirke.gpx in Resources */,
+				356060E32CEE3C9A0023477C /* Malmö.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
