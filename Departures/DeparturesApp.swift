@@ -11,11 +11,13 @@ import SwiftData
 @main
 struct DeparturesApp: App {
     
+    private var locationTracker = LocationTracker()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(self.locationTracker)
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(self.sharedModelContainer)
     }
     
     // MARK: SwiftData

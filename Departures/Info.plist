@@ -6,5 +6,9 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We need your location to provide personalized content while you use the app.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>We need your location to provide personalized content even when you're not using the app.</string>
 </dict>
 </plist>

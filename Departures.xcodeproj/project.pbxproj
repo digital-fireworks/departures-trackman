@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		356060B22CEE0D4D0023477C /* Rejseplanen in Frameworks */ = {isa = PBXBuildFile; productRef = 356060B12CEE0D4D0023477C /* Rejseplanen */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		356060932CEE0B190023477C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356060B22CEE0D4D0023477C /* Rejseplanen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = Departures;
 			packageProductDependencies = (
+				356060B12CEE0D4D0023477C /* Rejseplanen */,
 			);
 			productName = Departures;
 			productReference = 3560607E2CEE0B180023477C /* Departures.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 356060752CEE0B180023477C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				356060B02CEE0D4D0023477C /* XCRemoteSwiftPackageReference "Rejseplanen" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3560607F2CEE0B180023477C /* Products */;
 			projectDirPath = "";
@@ -575,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		356060B02CEE0D4D0023477C /* XCRemoteSwiftPackageReference "Rejseplanen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/digital-fireworks/Rejseplanen";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		356060B12CEE0D4D0023477C /* Rejseplanen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 356060B02CEE0D4D0023477C /* XCRemoteSwiftPackageReference "Rejseplanen" */;
+			productName = Rejseplanen;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 356060762CEE0B180023477C /* Project object */;
 }

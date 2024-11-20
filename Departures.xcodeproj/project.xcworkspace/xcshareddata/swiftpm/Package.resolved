@@ -1,0 +1,15 @@
+{
+  "originHash" : "730a941eada08a611c246a6fb7db060897ebd6008e2b71adf8e46aee5b60e93e",
+  "pins" : [
+    {
+      "identity" : "rejseplanen",
+      "kind" : "remoteSourceControl",
+      "location" : "http://github.com/digital-fireworks/Rejseplanen",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bb95a5ba5186cad7680621dbeb5981bff7bebf98"
+      }
+    }
+  ],
+  "version" : 3
+}
