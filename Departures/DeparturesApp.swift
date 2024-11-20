@@ -10,9 +10,19 @@ import SwiftData
 
 @main
 struct DeparturesApp: App {
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .modelContainer(sharedModelContainer)
+    }
+    
+    // MARK: SwiftData
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            // TODO: Add models
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -22,11 +32,4 @@ struct DeparturesApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
-    }
 }
