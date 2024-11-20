@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 import CoreLocation
 
-struct ContentView: View {
+struct DebugView: View {
     
     @Environment(\.modelContext) private var modelContext
     @EnvironmentObject private var locationTracker: LocationTracker
@@ -27,5 +27,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView().environmentObject(LocationTracker())
+    DebugView().environmentObject(LocationTracker())
 }

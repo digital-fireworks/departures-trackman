@@ -15,7 +15,21 @@ struct DeparturesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(self.locationTracker)
+            TabView {
+                
+                StopsNearbyView()
+                    .tabItem {
+                        Label("Nearby", systemImage: "location.circle")
+                    }
+                
+                DebugView()
+                    .environmentObject(self.locationTracker)
+                    .tabItem{
+                        Label("Debug", systemImage: "gear")
+                    }
+                
+            }
+            
         }
         .modelContainer(self.sharedModelContainer)
     }
