@@ -9,12 +9,6 @@ import SwiftUI
 import SwiftData
 import CoreLocation
 
-extension CLLocation {
-    open override var description: String {
-        "\(self.coordinate.latitude), \(self.coordinate.longitude)"
-    }
-}
-
 struct ContentView: View {
     
     @Environment(\.modelContext) private var modelContext

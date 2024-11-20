@@ -8,6 +8,12 @@
 import SwiftUI
 import CoreLocation
 
+extension CLLocation {
+    open override var description: String {
+        "\(self.coordinate.latitude), \(self.coordinate.longitude)"
+    }
+}
+
 class LocationTracker: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     // Use this as default location is access to location is not auhtorized by user
