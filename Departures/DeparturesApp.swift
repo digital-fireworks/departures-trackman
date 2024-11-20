@@ -11,25 +11,9 @@ import SwiftData
 @main
 struct DeparturesApp: App {
     
-    private var locationTracker = LocationTracker()
-    
     var body: some Scene {
         WindowGroup {
-            TabView {
-                
-                StopsNearbyView()
-                    .tabItem {
-                        Label("Nearby", systemImage: "location.circle")
-                    }
-                
-                DebugView()
-                    .environmentObject(self.locationTracker)
-                    .tabItem{
-                        Label("Debug", systemImage: "gear")
-                    }
-                
-            }
-            
+            ContentView()
         }
         .modelContainer(self.sharedModelContainer)
     }
