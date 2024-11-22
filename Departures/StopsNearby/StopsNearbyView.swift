@@ -9,10 +9,6 @@ import SwiftUI
 import Rejseplanen
 import CoreLocation
 
-#if DEBUG
-let IS_RUNNING_IN_CANVAS: Bool = ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
-#endif
-
 struct StopsNearbyView: View {
     
     @Environment(LocationTracker.self) private var locationTracker
