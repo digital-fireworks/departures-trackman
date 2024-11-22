@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Nearby", systemImage: "location.circle")
                 }
-            
+                        
             #if DEBUG
             DebugView()
                 .environment(locationTracker)

@@ -12,7 +12,7 @@ import Rejseplanen
 import CoreLocation
 #endif
 
-struct StopListItemView: View {
+struct StopCell: View {
     
     @State var stop: Stop
     @Environment(\.location) private var userLocation
@@ -42,9 +42,9 @@ struct StopListItemView: View {
 #Preview("StopListItemView") {
 
     List {
-        StopListItemView(stop: Stop(name: "København H", x: 22, y: 27))
-        StopListItemView(stop: Stop(name: "Nørreport", x: 22, y: 27))
-        StopListItemView(stop: Stop(name: "Vesterport", x: 22, y: 27))
-        StopListItemView(stop: Stop(name: "Kongens Nytorv", x: 22, y: 27))
+        StopCell(stop: Stop(name: "København H", x: 22, y: 27))
+        StopCell(stop: Stop(name: "Nørreport", x: 22, y: 27))
+        StopCell(stop: Stop(name: "Vesterport", x: 22, y: 27))
+        StopCell(stop: Stop(name: "Kongens Nytorv", x: 22, y: 27))
     }
 }
