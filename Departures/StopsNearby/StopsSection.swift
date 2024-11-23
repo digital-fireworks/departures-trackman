@@ -7,6 +7,7 @@
 //
 import SwiftUI
 import Rejseplanen
+import SwiftData
 
 struct StopsSection: View {
     
@@ -15,9 +16,10 @@ struct StopsSection: View {
     var body: some View {
         Section {
             ForEach(stopsCollection.stops) { stop in
-                NavigationLink(destination: DepartureBoardView(stop: stop)) {
+                NavigationLink(destination: DepartureBoardView(stop: stop, type: stopsCollection.type.departureBoardType)) {
                     StopCell(stop: stop)
                 }
+                
             }
         } header: {
             if self.stopsCollection.stops.count > 0 {

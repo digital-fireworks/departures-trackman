@@ -26,6 +26,9 @@ struct ContentView: View {
                     Label("Debug", systemImage: "gear")
                 }
             #endif
+            
         }
+        // Make lists look and feel uniform using enviromnent.
+        .environment(\.defaultMinListRowHeight, 50)
     }
 }

@@ -47,7 +47,9 @@ struct StopsNearbyView: View {
                 let trains = try await self.rejseplanen.stopsNearby(location: location, products: RejseplanenProduct.trains, maxRadius: 2000)
                 let busses = try await self.rejseplanen.stopsNearby(location: location, products: RejseplanenProduct.busses, maxRadius: 500)
                 let metros = try await self.rejseplanen.stopsNearby(location: location, products: RejseplanenProduct.metros, maxRadius: 1000)
-                let ferries = try await self.rejseplanen.stopsNearby(location: location, products: RejseplanenProduct.ferries, maxRadius: 5000)
+                
+                // Ferries are actually supported by Rejseplanen, but we can't really seem to get reliable results from that API, so it's left out for now.
+                let ferries: Stops = []  // try await self.rejseplanen.stopsNearby(location: location, products: RejseplanenProduct.ferries, maxRadius: 5000)
             
                 let trainsCollection = StopsCollection(type: .trains, stops: trains)
                 let busCollection = StopsCollection(type: .busses, stops: busses)
@@ -55,7 +57,7 @@ struct StopsNearbyView: View {
                 let ferriesCollection = StopsCollection(type: .ferries, stops: ferries)
                 
                 withAnimation {
-                    self.stops = [trainsCollection, busCollection, metrosCollection, ferriesCollection]
+                    self.stops = [trainsCollection, metrosCollection, busCollection, ferriesCollection]
                 }
             } catch let error {
                 // TODO: Handle error gracefully.

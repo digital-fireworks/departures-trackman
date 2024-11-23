@@ -7,10 +7,7 @@
 
 import SwiftUI
 import Rejseplanen
-
-#if DEBUG
 import CoreLocation
-#endif
 
 struct StopCell: View {
     
@@ -19,7 +16,8 @@ struct StopCell: View {
     
     var body: some View {
         HStack {
-            Text(stop.prettyName).bold()
+            Text(stop.name)
+                .bold()
             Spacer()
             if let userLocation = userLocation {
                 let distance = stop.location.distance(from:userLocation)
@@ -34,7 +32,6 @@ struct StopCell: View {
                 Text("\(formatted)")
             }
             #endif
-            
         }
     }
 }

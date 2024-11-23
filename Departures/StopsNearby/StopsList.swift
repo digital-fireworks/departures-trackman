@@ -31,6 +31,19 @@ enum StopsCollectionType {
         case .ferries: return "ferry"
         }
     }
+
+}
+
+extension StopsCollectionType {
+    
+    var departureBoardType: DepartureBoardType {
+        switch self {
+        case .trains: return .trains
+        case .busses: return .busses
+        case .metros: return .metros
+        default: return .all
+        }
+    }
 }
 
 struct StopsCollection {
