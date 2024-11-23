@@ -60,7 +60,10 @@ extension Departure {
     @ViewBuilder
     var finalStopView: some View {
         if self.type == .metro {
-            let prettierFinalStop = finalStop?.replacingOccurrences(of: "(Metro)", with: "") ?? ""
+            let prettierFinalStop = finalStop?.replacingOccurrences(of: "(Metro)", with: "").trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            Text("\(prettierFinalStop)")
+        } else if self.type == .lightRail {
+            let prettierFinalStop = finalStop?.replacingOccurrences(of: "(Letbane)", with: "").trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
             Text("\(prettierFinalStop)")
         } else {
             if let finalStop = finalStop {
@@ -164,8 +167,10 @@ extension Departure {
             return Color.trainIntercity
         case .lyn:
             return Color.trainIntercityLyn
-        case .bus, .expressBus, .nightBus:
+        case .bus, .expressBus:
             return Color.bus
+        case .nightBus:
+            return Color.nightBus
         case .lightRail:
             return Color.aarhusLetbane
         case .metro:

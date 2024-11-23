@@ -23,8 +23,11 @@ extension Departure {
                 .replacingOccurrences(of: "Bus ", with: "")
                 .replacingOccurrences(of: "X ", with: "")
                 .replacingOccurrences(of: "Bybus ", with: "")
+                .replacingOccurrences(of: "Natbus ", with: "")
         case .metro:
             return self.name.replacingOccurrences(of: "Metro ", with: "")
+        case .lightRail:
+            return self.name.replacingOccurrences(of: "Letbane ", with: "")
         case .regional:
             return "Re"
         case .intercity:

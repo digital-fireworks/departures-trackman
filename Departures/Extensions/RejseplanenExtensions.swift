@@ -67,7 +67,9 @@ extension Stop {
 extension Departure {
     
     var badgeTextColor: Color {
-        if [DepartureType.bus, .expressBus, .nightBus, .teleBus].contains(self.type) { return .departureBadgeTextColorDark }
+        if self.type == .nightBus {
+            return .departureBadgeTextColorNightBus
+        } else if [DepartureType.bus, .expressBus, .teleBus].contains(self.type) { return .departureBadgeTextColorDark }
         else { return .departureBadgeTextColorLight }
     }
     
