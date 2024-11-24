@@ -96,87 +96,14 @@ extension Departure {
     
     @ViewBuilder
     var dateView: some View {
-        let departureDate = self.date.departureDate
+        let departureDate = self.date.formattedDepartureTime()
         if departureDate.minutes {
             VStack(alignment: .center) {
-                Text("\(self.date.departureDate.value)").font(.time)
+                Text("\(departureDate.string)").font(.time)
                 Text("min").foregroundColor(.secondary).font(.system(size: 10, weight: .bold, design: .monospaced).width(.compressed))
             }
         } else {
-            Text("\(self.date.departureDate.value)").font(.time)
-        }
-    }
-    
-}
-
-extension Date {
-    
-    var departureDate: (value: String, minutes: Bool) {
-        let seconds = self.timeIntervalSinceNow - 30 // We pull off 30 seconds for user experience. Rather be 30 seconds too early than too late.
-        let minutes = Int(seconds / 60)
-        
-        if seconds < 0 {
-            return ("0", true)
-        } else if seconds < 60 {
-            return ("½", true)
-        } else if minutes < 30 {
-            return ("\(minutes)", true)
-        } else {
-            return (Formatters.shared.departureTimeFormatter.string(from: self), false)
-        }
-    }
-}
-
-extension Departure {
-    
-    var color: Color {
-        switch self.type {
-        case .stog:
-            switch self.badgeName.lowercased() {
-            case "a": return Color.sTrainLineA
-            case "b": return Color.sTrainLineB
-            case "c": return Color.sTrainLineC
-            case "e": return Color.sTrainLineE
-            case "f": return Color.sTrainLineF
-            case "h": return Color.sTrainLineH
-            case "m": return Color.sTrainLineM
-            case "bx": return Color.sTrainLineBx
-            default: return Color.defaultLine
-            }
-        case .tog:
-            switch self.badgeName.lowercased() {
-            case "ec":
-                return Color.eurocityTrain
-            default:
-                return Color.defaultLine
-            }
-        case .regional:
-            switch self.badgeName.lowercased() {
-            case "ic", "ie", "il", "l":
-                return Color.trainIntercity
-            case "re":
-                return Color.trainRegional
-            case "ø":
-                return Color.trainOresund
-            case "ec":
-                return Color.eurocityTrain
-            default:
-                return Color.trainRegional
-            }
-        case .intercity:
-            return Color.trainIntercity
-        case .lyn:
-            return Color.trainIntercityLyn
-        case .bus, .expressBus:
-            return Color.bus
-        case .nightBus:
-            return Color.nightBus
-        case .lightRail:
-            return Color.aarhusLetbane
-        case .metro:
-            return Color.metro
-        default:
-            return Color.defaultLine
+            Text("\(departureDate.string)").font(.time)
         }
     }
     

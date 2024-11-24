@@ -99,3 +99,58 @@ extension DepartureBoard {
     var ferries: [Departure] { departures.filter { $0.type == .ferry } }
     var other: [Departure] { departures.filter { $0.type == .unknown } }
 }
+
+extension Departure {
+    
+    var color: Color {
+        switch self.type {
+        case .stog:
+            switch self.badgeName.lowercased() {
+            case "a": return Color.sTrainLineA
+            case "b": return Color.sTrainLineB
+            case "c": return Color.sTrainLineC
+            case "e": return Color.sTrainLineE
+            case "f": return Color.sTrainLineF
+            case "h": return Color.sTrainLineH
+            case "m": return Color.sTrainLineM
+            case "bx": return Color.sTrainLineBx
+            default: return Color.defaultLine
+            }
+        case .tog:
+            switch self.badgeName.lowercased() {
+            case "ec":
+                return Color.eurocityTrain
+            default:
+                return Color.defaultLine
+            }
+        case .regional:
+            switch self.badgeName.lowercased() {
+            case "ic", "ie", "il", "l":
+                return Color.trainIntercity
+            case "re":
+                return Color.trainRegional
+            case "ø":
+                return Color.trainOresund
+            case "ec":
+                return Color.eurocityTrain
+            default:
+                return Color.trainRegional
+            }
+        case .intercity:
+            return Color.trainIntercity
+        case .lyn:
+            return Color.trainIntercityLyn
+        case .bus, .expressBus:
+            return Color.bus
+        case .nightBus:
+            return Color.nightBus
+        case .lightRail:
+            return Color.aarhusLetbane
+        case .metro:
+            return Color.metro
+        default:
+            return Color.defaultLine
+        }
+    }
+    
+}

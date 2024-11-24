@@ -7,19 +7,6 @@
 
 import Foundation
 
-//class DateFormatterManager {
-//    static let shared = DateFormatterManager()
-//
-//    private init() {}
-//
-//    lazy var shortDateFormatter: DateFormatter = {
-//        let formatter = DateFormatter()
-//        formatter.dateStyle = .short
-//        formatter.timeStyle = .none
-//        return formatter
-//    }()
-//}
-
 class Formatters {
     
     static let shared = Formatters()

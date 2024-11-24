@@ -73,6 +73,7 @@
 		356060A42CEE0B190023477C /* Exceptions for "Departures" folder in "Departures" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Extensions/StringExtensions.swift,
 				Info.plist,
 			);
 			target = 3560607D2CEE0B180023477C /* Departures */;
