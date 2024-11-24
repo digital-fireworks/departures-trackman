@@ -8,6 +8,7 @@
 import SwiftUI
 import Rejseplanen
 
+// TODO: Consider using DepartureBoardType instead, as this has the same values. The purpose of both this and DepartureBoardType is to allow for a better user experience by showing the most relevant products given the context for the user, i.e. if the user is interested in busses, indicated by selecting from the bus stops, the departure board for the stop should show busses only or as the first section.
 enum StopsCollectionType {
     case trains
     case busses
